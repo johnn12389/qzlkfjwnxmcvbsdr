@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="he" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>qwlskfjzxmnvda</title>
+<style>
+  body{margin:0;font-family:Segoe UI,Arial,sans-serif;background:#0b1226;color:#e8f0ff}
+  header{text-align:center;padding:48px 16px 24px}
+  header img{width:240px;height:240px;border-radius:24px;box-shadow:0 8px 40px #0006}
+  h1{margin:18px 0 4px;font-size:2.1rem}
+  .sub{color:#9fb4d8;margin:0 0 8px}
+  main{max-width:760px;margin:0 auto;padding:8px 16px 64px}
+  .ep{background:#141f3c;border:1px solid #24345e;border-radius:16px;padding:20px 22px;margin:16px 0}
+  .ep h2{font-size:1.15rem;margin:0 0 6px;color:#cfe0ff}
+  .ep p{color:#9fb4d8;margin:0 0 14px;font-size:.95rem;line-height:1.5}
+  audio{width:100%}
+  .feed{display:inline-block;margin-top:14px;color:#60afff;text-decoration:none;font-size:.9rem}
+  footer{text-align:center;color:#5f739c;font-size:.8rem;padding:24px}
+</style>
+</head>
+<body>
+<header>
+  <img src="cover.jpg" alt="qwlskfjzxmnvda">
+  <h1>qwlskfjzxmnvda</h1>
+  <p class="sub">mxnvqw lkjsdf poiqwz</p>
+  <a class="feed" href="feed.xml">RSS Feed</a>
+</header>
+<main id="eps"></main>
+<footer>© 2026</footer>
+<script>
+fetch('manifest.json').then(r=>r.json()).then(eps=>{
+  eps.sort((a,b)=>(a.episode||a.track)-(b.episode||b.track));
+  const m=document.getElementById('eps');
+  for(const e of eps){
+    const d=document.createElement('div');d.className='ep';
+    const mins=Math.round(e.duration/60);
+    d.innerHTML=`<h2>${e.title}</h2><p>${e.subtitle} · ${mins}'</p>
+      <audio controls preload="none" src="audio/${e.file}"></audio>`;
+    m.appendChild(d);
+  }
+});
+</script>
+</body>
+</html>
