@@ -2,6 +2,7 @@
 <rss version="2.0"
      xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
      xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0"
      xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>qwlskfjzxmnvda</title>
@@ -12,6 +13,8 @@
     <itunes:summary>mxnvqw lkjsdf poiqwz asdkfj zxmnvc</itunes:summary>
     <itunes:type>episodic</itunes:type>
     <itunes:explicit>false</itunes:explicit>
+    <itunes:block>Yes</itunes:block>
+    <googleplay:block>yes</googleplay:block>
     <itunes:image href="https://johnn12389.github.io/qzlkfjwnxmcvbsdr/cover.jpg"/>
     <itunes:category text="Education"/>
     <itunes:owner>
