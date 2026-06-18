@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="he" dir="ltr">
+<html lang="he" dir="rtl">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex, nofollow">
-<title>qwlskfjzxmnvda</title>
+<title>נוירו בקיצור — נוירולוגיה ברמת המומחה</title>
 <style>
   body{margin:0;font-family:Segoe UI,Arial,sans-serif;background:#0b1226;color:#e8f0ff}
   header{text-align:center;padding:48px 16px 24px}
@@ -22,21 +21,21 @@
 </head>
 <body>
 <header>
-  <img src="cover.jpg" alt="qwlskfjzxmnvda">
-  <h1>qwlskfjzxmnvda</h1>
-  <p class="sub">mxnvqw lkjsdf poiqwz</p>
-  <a class="feed" href="feed.xml">RSS Feed</a>
+  <img src="cover.jpg" alt="נוירו בקיצור">
+  <h1>נוירו בקיצור</h1>
+  <p class="sub">נוירולוגיה ברמת המומחה · פודקאסט קצר ובעל ערך קליני גבוה</p>
+  <a class="feed" href="feed.xml">🎧 RSS Feed</a>
 </header>
 <main id="eps"></main>
-<footer>© 2026</footer>
+<footer>מופק אוטומטית · © 2026</footer>
 <script>
 fetch('manifest.json').then(r=>r.json()).then(eps=>{
-  eps.sort((a,b)=>(a.episode||a.track)-(b.episode||b.track));
+  eps.sort((a,b)=>a.track-b.track);
   const m=document.getElementById('eps');
   for(const e of eps){
     const d=document.createElement('div');d.className='ep';
     const mins=Math.round(e.duration/60);
-    d.innerHTML=`<h2>${e.title}</h2><p>${e.subtitle} · ${mins}'</p>
+    d.innerHTML=`<h2>${e.title}</h2><p>${e.subtitle} · ${mins} דק׳</p>
       <audio controls preload="none" src="audio/${e.file}"></audio>`;
     m.appendChild(d);
   }
