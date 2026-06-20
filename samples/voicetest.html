@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>השוואת מנועי TTS בעברית</title>
+<style>
+ body{margin:0;font-family:Segoe UI,Arial,sans-serif;background:#0b1226;color:#e8f0ff;padding:24px}
+ h1{font-size:1.35rem}
+ .card{background:#141f3c;border:1px solid #24345e;border-radius:14px;padding:14px 16px;margin:12px 0;max-width:700px}
+ .tag{font-size:.78rem;color:#9fb4d8}
+ h2{font-size:1.02rem;margin:4px 0 8px}
+ audio{width:100%}
+ p{color:#9fb4d8;font-size:.9rem;margin:6px 0 0}
+ .free{color:#6ee7a8}.paid{color:#fbbf24}
+</style></head>
+<body>
+<h1>אותו קטע (דקה) ב-4 מנועים — איזה הכי טבעי?</h1>
+<p style="color:#9fb4d8">כולם אומרים בדיוק את אותו דיאלוג. תבחר את הכי טבעי, ותגיד אם אתה מעדיף קול אחר.</p>
+
+<div class="card">
+ <span class="tag paid">בתשלום (בקרדיטים שלך)</span>
+ <h2>1 · ElevenLabs eleven_v3 — Sarah + Brian</h2>
+ <audio controls preload="none" src="vt_elevenlabs.mp3"></audio>
+ <p>זה מה שאפיזודה 1 משתמשת בו עכשיו. אקספרסיבי, אבל הקולות אנגלים (מבטא קל).</p>
+</div>
+
+<div class="card">
+ <span class="tag free">חינם</span>
+ <h2>2 · Google Chirp3-HD — Aoede + Charon (בלי ניקוד)</h2>
+ <audio controls preload="none" src="vt_google.mp3"></audio>
+ <p>קולות עבריים ילידיים, טבעיים — אבל לפעמים הדגש על ההברה הלא נכונה.</p>
+</div>
+
+<div class="card">
+ <span class="tag free">חינם · ★ הניסוי המעניין</span>
+ <h2>3 · Google Chirp3-HD + ניקוד (תיקון דגשים)</h2>
+ <audio controls preload="none" src="vt_google_niqqud.mp3"></audio>
+ <p>אותם קולות, אבל הוספתי ניקוד אוטומטי (Dicta) כדי לתקן את הדגשים. תשווה ל-2.</p>
+</div>
+
+<div class="card">
+ <span class="tag free">חינם</span>
+ <h2>4 · edge-tts (Microsoft) — Hila + Avri</h2>
+ <audio controls preload="none" src="vt_edge.mp3"></audio>
+ <p>קולות עבריים ילידיים בחינם, אבל רובוטיים יותר.</p>
+</div>
+
+<p style="color:#9fb4d8;margin-top:18px">הערה: אפשר גם קול עברי <b>יליד</b> ב-ElevenLabs (הכי טוב) — צריך להוסיף אחד מ-Voice Library או לשבט קול. תגיד לי אם תרצה לנסות.</p>
+</body></html>

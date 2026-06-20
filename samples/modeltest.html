@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>בדיקת מודלים — איזה נשמע עברית</title>
+<style>
+ body{margin:0;font-family:Segoe UI,Arial,sans-serif;background:#0b1226;color:#e8f0ff;padding:24px}
+ h1{font-size:1.3rem}
+ .card{background:#141f3c;border:1px solid #24345e;border-radius:14px;padding:14px 16px;margin:12px 0;max-width:680px}
+ .tag{font-size:.8rem;color:#9fb4d8}
+ h2{font-size:1rem;margin:4px 0 8px}
+ audio{width:100%}
+ .bad{border-color:#f87171}.good{border-color:#6ee7a8}
+ p{color:#9fb4d8;font-size:.9rem}
+</style></head>
+<body>
+<h1>איזה מודל נשמע עברית תקינה?</h1>
+<p>כל הקליפים אומרים בדיוק את אותו משפט בעברית: "שלום וברוכים הבאים לנוירו בקיצור...". תבחר את זה שנשמע הכי כמו עברית אמיתית.</p>
+
+<div class="card bad">
+ <span class="tag">המודל הנוכחי (הבעייתי)</span>
+ <h2>multilingual_v2 · Sarah</h2>
+ <audio controls preload="none" src="modeltest_multi2_sarah.mp3"></audio>
+ <p>זה מה ששודר — עברית לא נתמכת במודל הזה.</p>
+</div>
+
+<div class="card good">
+ <span class="tag">★ מועמד · תומך עברית</span>
+ <h2>eleven_v3 · Sarah (אישה)</h2>
+ <audio controls preload="none" src="modeltest_v3_sarah.mp3"></audio>
+</div>
+
+<div class="card good">
+ <span class="tag">★ מועמד · תומך עברית</span>
+ <h2>eleven_v3 · Brian (גבר)</h2>
+ <audio controls preload="none" src="modeltest_v3_brian.mp3"></audio>
+</div>
+
+<div class="card">
+ <span class="tag">מועמד נוסף</span>
+ <h2>turbo_v2_5 · Sarah</h2>
+ <audio controls preload="none" src="modeltest_turbo25_sarah.mp3"></audio>
+</div>
+
+<div class="card">
+ <span class="tag">מועמד נוסף</span>
+ <h2>flash_v2_5 · Sarah</h2>
+ <audio controls preload="none" src="modeltest_flash25_sarah.mp3"></audio>
+</div>
+</body></html>
